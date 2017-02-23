@@ -5,7 +5,7 @@ This is a simple script to download all [VRL](http://ruhr-lippe-tarif.de) stops 
 The script uses the following endpoint:
 
 ```
-http://efa.vrr.de/vrr/XSLT_COORD_REQUEST?&jsonp=&boundingBox=&boundingBoxLU={minx}%3A{miny}%3AWGS84%5BDD.DDDDD%5D&boundingBoxRL={maxx}%3A{maxy}%3AWGS84%5BDD.DDDDD%5D&coordOutputFormat=WGS84%5BGGZHTXX%5D&type_1=STOP&outputFormat=json&inclFilter=1
+http://efa.vrr.de/vrrstd/XSLT_COORD_REQUEST?&jsonp=&boundingBox=&boundingBoxLU={minx}%3A{miny}%3AWGS84%5BDD.DDDDD%5D&boundingBoxRL={maxx}%3A{maxy}%3AWGS84%5BDD.DDDDD%5D&coordOutputFormat=WGS84%5BGGZHTXX%5D&type_1=STOP&outputFormat=json&inclFilter=1
 ```
 
 It starts from bounding box `(5, 47, 15, 56)` and works down to smaller quadrants.
@@ -14,7 +14,7 @@ The script produces CSV output in the following format:
 
 ```
 "stop_id","stop_name","stop_lon","stop_lat","stop_code"
-"24202768","Meinerzhagen, Eckertsmühle",7.67801,55.56066,"de:5962:2768"
+"24200425","Lüdenscheid, Piepersloh Waldfriedhof",7.66377,51.19332,"de:5962:425"
 ```
 
 # Usage
